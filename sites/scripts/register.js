@@ -1,3 +1,7 @@
+window.addEventListener('DOMContentLoaded', () => {
+    sessionStorage.removeItem('userKey');
+});
+  
 const form = document.getElementById('registerForm');
 
 form.addEventListener('submit', async (e) => {
@@ -18,6 +22,7 @@ form.addEventListener('submit', async (e) => {
 
         if (response.status === 200) {
             alert('You have been registered successfully!');
+            window.location.href = 'sites/login.html';
         } else {
             alert(response.data.message || 'Registration failed.');
         }

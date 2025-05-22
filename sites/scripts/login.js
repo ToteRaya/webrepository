@@ -1,3 +1,7 @@
+window.addEventListener('DOMContentLoaded', () => {
+    sessionStorage.removeItem('userKey');
+});  
+
 const form = document.getElementById('loginform');
 
 form.addEventListener('submit', async (e) => {
@@ -13,8 +17,9 @@ form.addEventListener('submit', async (e) => {
         });
 
         if (response.status === 200) {
-            localStorage.setItem('userKey', response.data.userKey);
-            window.location.href = 'sites/dashboard.html';
+            // alert('You have been logged in successfully!');
+            sessionStorage.setItem('userKey', response.data.userKey);
+            window.location.href = 'dashboard.html';
         } else {
             alert(response.data.message || 'Registration failed.');
         }
