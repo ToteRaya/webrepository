@@ -1,23 +1,20 @@
-const form = document.getElementById('registerForm');
+const form = document.getElementById('loginform');
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const name = document.getElementById('name').value;
-    const lastname = document.getElementById('lastname').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
     try {
-        const response = await axios.post('http://unimarket.us-east-1.elasticbeanstalk.com/login/register', {
-            name,
-            lastname,
+        const response = await axios.post('http://unimarket.us-east-1.elasticbeanstalk.com/login/', {
             email,
             password
         });
 
         if (response.status === 200) {
-            alert('You have been registered successfully!');
+            localStorage.setItem('userKey', response.data.userKey);
+            window.location.href = 'sites/dashboard.html';
         } else {
             alert(response.data.message || 'Registration failed.');
         }
