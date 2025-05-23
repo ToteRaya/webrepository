@@ -6,7 +6,7 @@ const getUserInfo = async () => {
      try {
           const token = await getToken();
 
-          const response = await axios.get('https://api.example.com/user/getUserInfo', {
+          const response = await axios.get('http://unimarket.us-east-1.elasticbeanstalk.com/user/getUserInfo', {
                headers: {
                     userID: userID,
                     Authorization: `Bearer ${token}` 
@@ -19,3 +19,13 @@ const getUserInfo = async () => {
           console.error('Error fetching user info:', error);
      }
 };
+
+document.addEventListener('DOMContentLoaded', async () => {
+     const userInfo = await getUserInfo();
+
+     if (userInfo) {
+          document.getElementById('name').textContent = userInfo.name || '';
+          document.getElementById('lastname').textContent = userInfo.lastname || '';
+          document.getElementById('email').textContent = userInfo.email || '';
+     }
+});
