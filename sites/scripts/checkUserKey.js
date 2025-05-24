@@ -4,6 +4,12 @@ window.addEventListener('DOMContentLoaded', () => {
      if (!userKey || !userKey) {
           window.location.href = 'login.html';
      }
+
+     const isEditPostPage = window.location.pathname.includes('postEdit.html');
+
+     if (!isEditPostPage) {
+          sessionStorage.removeItem('postID');
+     }
 });
 
 const getToken = async () => {
