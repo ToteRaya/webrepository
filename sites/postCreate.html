@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Make a post</title>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <script src="scripts\checkUserKey.js"></script>
+</head>
+
+<body>
+     <h2>Make a Post</h2>
+     <form id="postCreate">
+          Title:<input type="text" id="title" name="title" required><br><br>
+     
+          Description:<input type="text" id="description" name="description" required><br>
+          Quantity:<input type="number" id="quantity" name="quantity" required><br>
+          Price:<input type="number" id="price" name="price" required><br>
+          Available Time:<input type="time" id="availableFrom" name="availableFrom" required><br>
+          Until:<input type="time" id="availableTo" name="availableTo" required><br><br>
+     
+          Categories: <br>
+          <div id="categoryChecklist"></div><br><br>
+     
+          Upload Images:<br>
+          <input type="file" id="imageInput" accept="image/webp" required><br>
+          <div id="imagePreview"></div><br>
+     
+          <button type="submit">Create Post</button>
+     </form>
+      
+     <a href="dashboard.html">Back</a>
+</body>
+
+<script src="scripts/postCreate.js"></script>
+
+</html>
