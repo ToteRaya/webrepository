@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
           window.location.href = 'login.html';
      }
 
-     const isEditPostPage = window.location.pathname.includes('postEdit.html');
+     const isEditPostPage = window.location.pathname.includes('postEdit');
 
      if (!isEditPostPage) {
           sessionStorage.removeItem('postID');

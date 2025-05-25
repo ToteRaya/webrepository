@@ -40,9 +40,9 @@ document.addEventListener("DOMContentLoaded", async () => {
           </span>
            <div class="button-row">
                <button onclick="editPost(${post.postID})">Edit</button>
+               <button onclick="editPostImages(${post.postID})">Edit Images</button>
                <button onclick="deletePost(${post.postID})">Delete</button>
                <button onclick="toggleAvailability(${post.postID})">Toggle Availability</button>
-               <button onclick="editPostImages(${post.postID})">Edit Images</button>
           </div>
 
          `;
