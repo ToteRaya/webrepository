@@ -95,7 +95,16 @@ document.addEventListener("DOMContentLoaded", async () => {
                          { headers }
                     );
 
-                    const postIDs = postIDsResponse.data;
+                    // const postIDs = postIDsResponse.data;
+
+                    let postIDs = postIDsResponse.data;
+
+                    // Shuffle the array using Fisher-Yates algorithm
+                    for (let i = postIDs.length - 1; i > 0; i--) {
+                         const j = Math.floor(Math.random() * (i + 1));
+                         [postIDs[i], postIDs[j]] = [postIDs[j], postIDs[i]];
+                    }
+
 
                     for (const postObj of postIDs) {
                          const postID = postObj.postID;
