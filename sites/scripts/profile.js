@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                <button onclick="editPost(${post.postID})">Edit</button>
                <button onclick="deletePost(${post.postID})">Delete</button>
                <button onclick="toggleAvailability(${post.postID})">Toggle Availability</button>
+               <button onclick="editPostImages(${post.postID})">Edit Images</button>
           </div>
 
          `;
@@ -63,6 +64,12 @@ function formatTime(timeInt) {
 function editPost(postID) {
      sessionStorage.setItem("postID", postID);
      window.location.href = "postEdit.html";
+}
+
+
+function editPostImages(postID) {
+     sessionStorage.setItem("postID", postID);
+     window.location.href = "postEditImages.html";
 }
    
 async function deletePost(postID) {
