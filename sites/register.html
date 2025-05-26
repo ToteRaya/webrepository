@@ -6,18 +6,25 @@
   <title>Register</title>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="scripts\checkRemoveKey.js"></script>
+  <link rel="stylesheet" href="style/styles.css">
 </head>
 
 <body>
   <h1>Register</h1>
   <form id="registerForm">
-    Name: <input type="text" id="name" placeholder="First Name" required /> <br>
-    Last Name: <input type="text" id="lastname" placeholder="Last Name" required /> <br>
-    Email: <input type="email" id="email" placeholder="Email" required /> <br>
-    Password: <input type="password" id="password" placeholder="Password" required /> <br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="First Name" required />
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" placeholder="Last Name" required />
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Email" required />
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Password" required />
     <button type="submit">Register</button>
+    <a href="login.html">Login</a>
+
   </form>
-  <a href="login.html">login</a>
 </body>
 
 <script src="scripts/register.js"></script>

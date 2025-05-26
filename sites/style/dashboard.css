@@ -1,0 +1,51 @@
+body {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 8px;
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #9b5c71;
+}
+
+label[for="categorySelect"] {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#categorySelect {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3b3b3b;
+    color: white;
+    border: none;
+    font-size: 14px;
+}
+
+#posts {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}

@@ -1,0 +1,110 @@
+/* Fondo y tipografía general */
+body {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Encabezado */
+h2 {
+    margin: 30px 0 10px;
+    font-size: 28px;
+}
+
+/* Enlaces tipo botón arriba */
+a {
+    display: inline-block;
+    margin: 10px 15px;
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background-color: #3b3b3b;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #9b5c71;
+}
+
+/* Contenedor de los posts */
+#userPosts {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+/* Tarjeta de cada publicación */
+.post {
+    background-color: #2c2c2c;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+    text-align: center;
+}
+
+/* Imagen del post */
+.post-image {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Texto del post */
+.post-card h3 {
+    margin: 10px 0 5px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.post-card p {
+    margin: 6px 0;
+    color: #cccccc;
+}
+
+/* Estado activo/inactivo */
+.status {
+    display: inline-block;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #ffffff; /* Por defecto inactivo */
+}
+
+.status::before {
+    content: "● ";
+}
+
+.status.active {
+    color: #ffffff;
+}
+
+/* Botones debajo del post */
+.button-row {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button-row button {
+    padding: 8px 16px;
+    background-color: #9b5c71;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button-row button:hover {
+    background-color: #b06c83;
+}

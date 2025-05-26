@@ -1,0 +1,79 @@
+/* Estilo general */
+body {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Título */
+h2 {
+    margin: 30px 0 20px;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+/* Información de usuario en settings.html */
+span {
+    font-weight: bold;
+    color: #dddddd;
+}
+
+/* Formulario general */
+form {
+    background-color: #2c2c2c;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    text-align: left;
+}
+
+/* Etiquetas de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #3b3b3b;
+    color: white;
+}
+
+/* Botón de acción */
+button {
+    padding: 10px 20px;
+    background-color: #9b5c71;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b06c83;
+}
+
+/* Enlaces como botones */
+a {
+    display: inline-block;
+    margin: 20px 10px 0;
+    color: #f0f0f0;
+    text-decoration: none;
+    background-color: #3b3b3b;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #9b5c71;
+}
