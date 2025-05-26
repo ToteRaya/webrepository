@@ -10,30 +10,22 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="profile.html">Profile</a>
-        <a href="settings.html">Settings</a>
-        <a href="postCreate.html">Make a Post</a>
-        <a href="login.html">Logout</a>
+    <h2>Dashboard</h2>
+    <a href="profile.html">Profile</a><br>
+    <a href="settings.html">Settings</a><br>
+    <a href="postCreate.html">Make a Post</a><br>
+    <a href="imageConvert.html">Convert Images</a><br>
+    <a href="login.html">Logout</a>
+    <a href="login.html">Logout</a><br><br>
+    <label for="categorySelect">Choose a category:</label>
+    <select id="categorySelect">
+        <option value="">All Categories</option>
+    </select>
+
+    <div id="posts">
+
     </div>
 
-    <div class="dashboard-container">
-        <h2>Dashboard</h2>
-
-        <div class="category-filter">
-            <label for="categorySelect">Choose a category:</label>
-            <select id="categorySelect">
-                <option value="">All Categories</option>
-            </select>
-        </div>
-
-        <div id="posts">
-            
-        </div>
-    </div>
 </body>
 
-
 <script src="scripts/dashboard.js"></script>
-
-</html>
